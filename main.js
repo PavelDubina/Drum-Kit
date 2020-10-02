@@ -16,7 +16,7 @@ function removeTransition(e) {
 }
 function playMouse(e) {
   const audio = document.querySelector(
-    `audio[data-key="${e.currentTarget.attributes[0].value}"]`
+    `audio[data-key="${e.currentTarget.dataset.key}"]`
   );
   playAudioAddClass(audio, this);
 }
